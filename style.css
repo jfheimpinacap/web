@@ -1,0 +1,36 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sección de información */
+.info {
+    padding: 20px;
+    background-color: #e6f2ff;
+}
+
+/* Imagen */
+.imagen {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
