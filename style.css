@@ -34,3 +34,42 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* Sección de contacto */
+.contacto {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    }
+.contacto h2{ 
+    text-align: center;
+    }
+
+.contacto form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contacto input[type="submit"] {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto input[type="submit"]:hover {
+    background-color: #005fa3;
+}
