@@ -53,12 +53,19 @@ header {
 
 /* Menu */
 .seccion-menu {
-  background-image: url("maquinas/fondo_maquinas.jpg"); /* Imagen de fondo */
-  background-size: cover;
-  background-position: center;
-  padding: 60px 0;
+  background-image: url("maquinas/fondo_maquinas.jpg"); /* Asigna una imagen de fondo a la sección con clase "seccion-menu" */
+  background-size: cover;                              /* Hace que la imagen de fondo cubra completamente la sección, ajustándose automáticamente */
+  background-position: center;                         /* Centra la imagen de fondo para que se vea bien sin importar el tamaño */
+  padding: 60px 0;                                      /* Agrega espacio arriba y abajo de la sección (60px arriba y 60px abajo, 0 a los lados) */
 }
 
+.contenedor-menu {
+  max-width: 800px;       /* Ancho máximo del contenido */
+  margin: 0 auto;         /* Centra horizontalmente */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
 
 .botonera-menu {
   list-style: none;
@@ -90,50 +97,47 @@ header {
 }
 
 
-/* Video */
-.video-center h2{
-    text-align: center;
-}
-
-.video-incr{
-    text-align: center;
-}
-
 /* Sección de contacto */
 .contacto {
     background-color: #ffffff;
-    max-width: 500px;
-    padding: 20px;
-    margin: 40px 600px;
+    width: 100%;
+    max-width: 500px; /* tamaño controlado */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center; /* centrado del texto */
+    box-sizing: border-box;
     
     }
 .contacto h2 { 
-    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6em;
     }
 
 .contacto form {
-    max-width: 400px;
-    margin: auto;
-}
+    width: 100%;
+    }
 
 .contacto input[type="text"],
 .contacto input[type="email"],
 .contacto textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 12px;
+    margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 .contacto input[type="submit"] {
     background-color: #0077cc;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 15px;
+    font-size: 15px;
 }
 
 .contacto input[type="submit"]:hover {
@@ -142,12 +146,17 @@ header {
 
 /* Contenedor de mapa */
 .mapa h2{
-    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
 .mapa {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center; /* centra el texto y el mapa */
+    box-sizing: border-box;
 }
 
 .mapa iframe {
@@ -155,6 +164,17 @@ header {
     height: 300px;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+
+/* Contenedor flexible para contacto + mapa */
+.contenedor-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap; /* Asegura que en pantallas pequeñas se apilen */
+  margin: 0 auto;
+  margin: 40px 20px;
 }
 
 
