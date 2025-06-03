@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.lista-maquinas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.item-maquina {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.item-maquina img {
+    width: 200px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.info-maquina h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.info-maquina p {
+    margin: 5px 0 0;
+}
+
+/* videos maquinas */
+.item-maquina {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Permite adaptarse en pantallas pequeñas */
+}
+
+.imagen-maquina img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info-maquina {
+  max-width: 300px;
+}
+
+.video-maquina iframe {
+  border-radius: 8px;
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

@@ -15,17 +15,80 @@ header {
     text-align: center;
 }
 
-/* Sección de información */
-.info {
-    padding: 20px;
-    background-color: #e6f2ff;
+/* Contenedor con imagen a la izquierda y texto a la derecha */
+.info-flex {
+    background-color: #ffffff;
+    padding:20px;
+    margin: 20px;
+    }
+
+.info-flex {
+    display: flex;
+    align-items: flex-start;       /* Alinea imagen y texto por arriba */
+    justify-content: center;       /* Centra todo el bloque horizontalmente */
+    gap: 30px;                     /* Espacio entre imagen y texto */
+    max-width: 600px;              /* Ancho máximo del bloque */
+    margin: 0 auto;                /* Centra el bloque dentro del sitio */
+    padding: 40px 20px;
 }
 
 /* Imagen */
-.imagen {
-    text-align: center;
-    margin: 20px;
+.info-flex .foto img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
 }
+
+/* Texto */
+.info-flex .info-texto {
+    flex: 1;                       /* Que ocupe el espacio restante */
+    max-width: 300px;
+}
+
+/* Ajustes opcionales */
+.info-texto h2,
+.info-texto h3 {
+    margin-top: 0;
+}
+
+/* Menu */
+.seccion-menu {
+  background-image: url("maquinas/fondo_maquinas.jpg"); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+
+
+.botonera-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.botonera-menu li {
+  margin: 0;
+}
+
+.btn-menu {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-menu:hover {
+  background-color: #0056b3;
+}
+
 
 /* Video */
 .video-center h2{
@@ -36,20 +99,13 @@ header {
     text-align: center;
 }
 
-
-/* Pie de página */
-footer {
-    background-color: #0077cc;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
 /* Sección de contacto */
 .contacto {
     background-color: #ffffff;
+    max-width: 500px;
     padding: 20px;
-    margin: 20px;
+    margin: 40px 600px;
+    
     }
 .contacto h2 { 
     text-align: center;
@@ -132,4 +188,12 @@ footer {
     background-color: #ffffff;
     padding: 20px;
     margin: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
