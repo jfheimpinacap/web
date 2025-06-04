@@ -106,8 +106,8 @@ header {
     border-radius: 10px;
     text-align: center; /* centrado del texto */
     box-sizing: border-box;
-    
     }
+    
 .contacto h2 { 
     margin-bottom: 20px;
     font-size: 1.6em;
@@ -151,26 +151,28 @@ header {
 }
 
 .mapa {
-    max-width: 500px;
     background-color: #ffffff;
+    width: 100%;
+    max-width: 500px; /* tamaño controlado */
     padding: 30px;
     border-radius: 10px;
-    text-align: center; /* centra el texto y el mapa */
+    text-align: center; /* centrado del texto */
     box-sizing: border-box;
-}
+    }
 
 .mapa iframe {
-    width: 100%;
-    height: 300px;
+    width: 420px;
+    height: 500px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
 
 /* Contenedor flexible para contacto + mapa */
 .contenedor-flex {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 60px;
   flex-wrap: wrap; /* Asegura que en pantallas pequeñas se apilen */
   margin: 0 auto;
